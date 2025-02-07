@@ -27,19 +27,17 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        /* 2do metodo
 
+        /* 2do metodo
         btn1 = findViewById<Button>(R.id.btn_1)
         msg = findViewById<TextView>(R.id.mensaje)
         nombre = findViewById<EditText>(R.id.name)
-
          */
 
         /* 1er metodo */
         val btn1 = findViewById<Button>(R.id.btn_1)
         val msg = findViewById<TextView>(R.id.mensaje)
         val nombre = findViewById<EditText>(R.id.name)
-
 
         btn1.setOnClickListener{
             val nom = nombre.text.toString()
@@ -50,13 +48,11 @@ class MainActivity : AppCompatActivity() {
             else {
                 msg.text = "Hola $nom" + " ¿Como estas?"
             }
-
             Toast.makeText(this, "Hola $nom" + " ¿Como estas?", Toast.LENGTH_SHORT).show()
-            }
-
-         /* 1er metodo */
-
+        }
+        /* 1er metodo */
     }
+
     /* 2do metodo
     fun saludar(view: View) {
         val nom = nombre.text.toString()
